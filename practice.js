@@ -1,8 +1,8 @@
+
 /* 
   Once you complete a problem, refresh ./SpecRunner.html in your browser and check to see if the problem's test(s) are passing.
   Passed tests will be indicated by a green circle.
   Failed tests will be indicated by a red X.
-
   You can refresh the page at any time to re-run all the tests.
 */
 
@@ -17,11 +17,10 @@ var arr = [10,20,30];
   Return the first item in the given array.
 */
 
-//Code Here
-
 function first (arr){
   return arr[0];
 };
+
 
 ////////// PROBLEM 2 //////////
 
@@ -34,11 +33,10 @@ var arr = [40,50,60];
   Return the last item in the given array.
 */
 
-//Code Here
-
 function last (arr){
   return arr[arr.length-1];
 };
+
 
 ////////// PROBLEM 3 //////////
 
@@ -51,13 +49,12 @@ var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
   Loop through the given array and alert every item in the array.
 */
 
-//Code Here
-
 function looper (family){
   for (let i=0; i < family.length; i++){
     window.alert(family[i])
   }
 }
+
 
 ////////// PROBLEM 4 //////////
 
@@ -70,13 +67,12 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
   Loop through the given array backwards alerting every item in the array starting at the end.\
 */
 
-//Code Here
-
 function reversedLooper(letters){
   for(let i=arr.length-1; i >= 0; i--){
     window.alert(letters[i])
   }
 }
+
 
 ////////// PROBLEM 5 //////////
 
@@ -89,8 +85,6 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
   Return an array that contains the even numbers from the nums array.
 */
 
-//Code Here
-
 function evenFinder (nums){
   let evens = []
   for(let i=0; i < nums.length; i++){
@@ -100,6 +94,8 @@ function evenFinder (nums){
   }
   return evens;
 }
+
+
 
 
 
@@ -122,11 +118,9 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
 
 /*
   Write a function called divider that is given one argument, numbersArray.
-  Have divider return an Array with the first item in the array being the evens array (all the even values from numbersArray) and the second item in the Array being the odds array (all the odd values from numbersArray).
+  Have divider return an Array with the first item in the array being the evens array (all the even values from numbersArray) 
+  and the second item in the Array being the odds array (all the odd values from numbersArray).
 */
-
-//Code Here
-
 function divider(numbersArray){
   let arr = []
   let evens = []
@@ -160,8 +154,6 @@ var getRandomArbitrary = function() {
   If it is, return true, if it's not, return false
 */
 
-//Code Here
-
 function finder(arr){
   if(arr.includes(getRandomArbitrary())){
     return true
@@ -169,6 +161,7 @@ function finder(arr){
     return false
   }
 };
+
 
 ////////// PROBLEM 8 //////////
 
@@ -178,16 +171,12 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 
 /*
   Here we're going to write a function that mimics going shopping and checking things off of our grocery list and adding new items to our list.
-
   Write a function called removeItem that is given two arguments, the first is myGroceryList, and the second is an item to remove from myGroceryList. 
   If the second argument (or the item to add or remove) matches an item in myGroceryList, remove that item from the your grocery list and return the new, updated grocery list.
-
   Once you do that, write another function called addItem that is given two arguments, the first is myGroceryList and the second is an item to add to your grocery list. 
   In addItem add the item you passed in to myGroceryList then return the new, updated grocery list.
-
   In both removeItem and addItem check to see if the 'myGroceryList' and 'item' arguments are truthy.
   If they are not, return an empty array.
-
   Here are some examples of calling your functions and what should be returned:
   removeItem(myGroceryList, 'chips') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs'];
   addItem(myGroceryList, 'Jerky') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs', 'Jerky'];
@@ -196,6 +185,8 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 */
 
 //Code Here
+
+
 
 function removeItem (arr,item){
   if (arr && item){
@@ -220,7 +211,6 @@ function addItem (arr,item){
 };
 
 
-
 ////////// PROBLEM 9 //////////
 
 /*
@@ -237,6 +227,10 @@ function maker (){
   return arr
 };
 
+
+
+  
+
 ////////// PROBLEM 10 //////////
 
 // Do not edit the code below.
@@ -250,12 +244,12 @@ var numbers = [5, '9', 16, 19, '25', '34', 48];
 */
   
 //Code Here
-
 function addTen (numbers){
   numbers.forEach(function add(val,i,arr){arr[i]= Number(val) + 10})
   return numbers;
 };
-  
+
+
 
 ////////// PROBLEM 11 //////////
 
@@ -288,11 +282,11 @@ function longer (arr1,arr2){
   }
 };
 
+
 /*
   As a continuation of the previous problem, write another function called 'both'.
   Your 'both' function will be given two arguments, arr1 and arr2 (from the previous example).
   'both' should return a new array with the matching numbers found in both arr1 and arr2.
-
   Example: var arr1 = [1,2,3,4]; var arr2 = [2,4,5,6]; newArray // [2,4]
 */
 
@@ -301,7 +295,7 @@ function longer (arr1,arr2){
 function both (arr1,arr2){
   let newArray = []
   for (let i=0; i < arr1.length; i++){
-    for(let j=0; j < arr2.length; i++){
+    for(let j=0; j < arr2.length; j++){
       if(arr1[i]===arr2[j]){
         newArray.push(arr1[i])
       }
@@ -309,6 +303,9 @@ function both (arr1,arr2){
   }
   return newArray;
 };
+
+
+
 
 ////////// PROBLEM 12 //////////
 
@@ -348,10 +345,10 @@ var colt = {
 
 //Code Here
 
-devMountainEmployees['tyler'] = tyler;
-devMountainEmployees['cahlan'] = cahlan;
-devMountainEmployees['ryan'] = ryan;
-devMountainEmployees['co lt'] = colt;
+devMountainEmployees.push(tyler)
+devMountainEmployees.push(cahlan)
+devMountainEmployees.push(ryan)
+devMountainEmployees.push(colt)
 
 /*
   Now let's say Cahlan has a mental breakdown and has to take a leave of absence to 'find himself'.
@@ -360,13 +357,13 @@ devMountainEmployees['co lt'] = colt;
 
 //Code Here
 
-function findHimself (arr){
-  for(let i=0; i < arr.length; i++){
-    if(arr[i]==='cahlan'){
-      arr.splice(i,1)
-    }
-  }
+
+for(let i=0; i < devMountainEmployees.length; i++){
+  if(devMountainEmployees[i].name==='Cahlan'){
+    devMountainEmployees.splice(i,1)
+      }
 }
+
 
 ////////// PROBLEM 13 //////////
 
@@ -412,8 +409,8 @@ var user3 = {
 }
 
 users.push(user1)
-user1.push(user2)
-user1.push(user3)
+users.push(user2)
+users.push(user3)
 
 /*
   Now you have a very common data structure. 
@@ -427,9 +424,9 @@ user1.push(user3)
 
 //Code Here
 
-for(let i=0; i < user1.length; i++){
-  if(arr[i].email==='tylermcginnis33@gmail.com'){
-    users.slice(i,1)
+for(let i=0; i < users.length; i++){
+  if(users[i].email==='tylermcginnis33@gmail.com'){
+    users.splice(i,1)
   }
 }
 
